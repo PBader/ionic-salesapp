@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9423b507e7bd0b6252bffed5483c3515",
+    "content-hash": "ac37eaadbcc028d954249d9f4de56524",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -298,11 +298,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.7",
+            "version": "3.3.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/24300e95ce3acd47d10557a8bd8b9b9fbc520795",
-                "reference": "24300e95ce3acd47d10557a8bd8b9b9fbc520795",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6b3b38a271d1ee3b74041efc1c291b3f8724171c",
+                "reference": "6b3b38a271d1ee3b74041efc1c291b3f8724171c",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +330,7 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "~2.11.0",
+                "twig/twig": "~2.12.0",
                 "voku/stringy": "~5.1.0",
                 "webonyx/graphql-php": "^0.12.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
@@ -380,7 +380,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-10-03T19:15:33+00:00"
+            "time": "2019-10-16T11:28:22+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -966,20 +966,15 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.8",
+            "version": "5.2.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/dcb6e1006bb5fd1e392b4daa68932880f37550d4",
-                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.2.20",
-                "json-schema/json-schema-test-suite": "1.2.0",
-                "phpunit/phpunit": "^4.8.35"
             },
             "bin": [
                 "bin/validate-json"
@@ -995,7 +990,6 @@
                     "JsonSchema\\": "src/JsonSchema/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1023,15 +1017,15 @@
                 "json",
                 "schema"
             ],
-            "time": "2019-01-14T23:55:14+00:00"
+            "time": "2019-09-25T14:49:45+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.55",
+            "version": "1.0.57",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/33c91155537c6dc899eacdc54a13ac6303f156e6",
-                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
+                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
                 "shasum": ""
             },
             "require": {
@@ -1040,10 +1034,6 @@
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
-            },
-            "require-dev": {
-                "phpspec/phpspec": "^3.4",
-                "phpunit/phpunit": "^5.7.10"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1072,7 +1062,6 @@
                     "League\\Flysystem\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1102,7 +1091,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-08-24T11:17:19+00:00"
+            "time": "2019-10-16T21:01:05+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -2555,11 +2544,11 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.11.3",
+            "version": "v2.12.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
-                "reference": "699ed2342557c88789a15402de5eb834dedd6792",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
+                "reference": "ddd4134af9bfc6dba4eff7c8447444ecc45b9ee5",
                 "shasum": ""
             },
             "require": {
@@ -2567,15 +2556,10 @@
                 "symfony/polyfill-ctype": "^1.8",
                 "symfony/polyfill-mbstring": "^1.3"
             },
-            "require-dev": {
-                "psr/container": "^1.0",
-                "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11-dev"
+                    "dev-master": "2.12-dev"
                 }
             },
             "autoload": {
@@ -2586,7 +2570,6 @@
                     "Twig\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2598,14 +2581,14 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
-                },
-                {
                     "name": "Twig Team",
                     "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -2613,7 +2596,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-18T15:37:11+00:00"
+            "time": "2019-10-17T07:34:53+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2717,11 +2700,11 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "5.14.1",
+            "version": "5.14.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/2a76c1f5b40ef78d757a137fc7d992a80783d229",
-                "reference": "2a76c1f5b40ef78d757a137fc7d992a80783d229",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/6fe80d46f515d8d96db244d36e6099ef6659c04a",
+                "reference": "6fe80d46f515d8d96db244d36e6099ef6659c04a",
                 "shasum": ""
             },
             "require": {
@@ -2760,7 +2743,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2019-09-16T21:25:09+00:00"
+            "time": "2019-10-06T17:56:40+00:00"
         },
         {
             "name": "voku/email-check",
@@ -2813,18 +2796,15 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.2.3",
+            "version": "1.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/d29f78e8ead9cfef6a09208c27716737c1ac56be",
-                "reference": "d29f78e8ead9cfef6a09208c27716737c1ac56be",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/d3553af811794c377ea2afff5494b343bcef5b76",
+                "reference": "d3553af811794c377ea2afff5494b343bcef5b76",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
             },
             "suggest": {
                 "ext-intl": "Use Intl for transliterator_transliterate() support"
@@ -2836,7 +2816,6 @@
                     "voku\\tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2853,15 +2832,15 @@
                 "clean",
                 "php"
             ],
-            "time": "2019-09-10T13:53:07+00:00"
+            "time": "2019-10-14T09:49:39+00:00"
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.23",
+            "version": "5.4.25",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
-                "reference": "bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/aed1b955d5d43e4104d72dce4158db5de3cecce6",
+                "reference": "aed1b955d5d43e4104d72dce4158db5de3cecce6",
                 "shasum": ""
             },
             "require": {
@@ -2871,7 +2850,7 @@
                 "symfony/polyfill-intl-normalizer": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php72": "~1.0",
-                "voku/portable-ascii": "~1.2"
+                "voku/portable-ascii": "~1.3"
             },
             "suggest": {
                 "ext-ctype": "Use Ctype for e.g. hexadecimal digit detection",
@@ -2918,7 +2897,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-09-27T07:24:07+00:00"
+            "time": "2019-10-14T06:46:29+00:00"
         },
         {
             "name": "voku/stop-words",
