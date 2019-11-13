@@ -40,34 +40,18 @@ class Home extends Component<{}, HomeState> {
                     <IonGrid>
                         <IonRow>
                             {this.state.loaded ? this.state.products.map( (element:object, index:number) => {
-                                if (index == 0) {
-                                    return(
+                                return(
+                                    <IonCol sizeSm="12" sizeMd="4" sizeLg="4">
                                         <a href={element['slug']} key={index}>
-                                            <IonCol sizeSm="12" sizeMd="8" sizeLg="4">
-                                                <IonCard>
-                                                    <img src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
-                                                    <IonHeader>
-                                                        <IonCardTitle>{element['productName']}</IonCardTitle>
-                                                    </IonHeader>
-                                                </IonCard>
-                                            </IonCol>
+                                            <IonCard>
+                                                <img src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
+                                                <IonHeader>
+                                                    <IonCardTitle>{element['productName']}</IonCardTitle>
+                                                </IonHeader>
+                                            </IonCard>
                                         </a>
-                                    )
-                                }
-                                else {
-                                    return(
-                                        <a href={element['slug']} key={index}>
-                                            <IonCol sizeSm="12" sizeMd="2" sizeLg="2">
-                                                <IonCard>
-                                                    <img src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
-                                                    <IonHeader>
-                                                        <IonCardTitle>{element['productName']}</IonCardTitle>
-                                                    </IonHeader>
-                                                </IonCard>
-                                            </IonCol>
-                                        </a>
-                                    )
-                                }
+                                    </IonCol>
+                                )
                             }) : <p> Loading content</p>}
                         </IonRow>
                     </IonGrid>
