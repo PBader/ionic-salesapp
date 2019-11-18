@@ -15,8 +15,7 @@ class Product extends Component<{}, ProductState> {
 
 	componentDidMount(): void {
 		const slug = window.location.pathname.split('/')[2];
-		console.log(slug);
-		const query = `query { entries(section: "product", slug: ${slug}){ title, ... on product_product_Entry {ingredients,priceWithTax,priceWithoutTax,productDescription,productImages,productName,variations }}}`;
+		const query = `query { entries(section:"product",slug:"${slug}"){ title, ... on product_product_Entry {ingredients,priceWithTax,priceWithoutTax,productDescription,productImages{ url },productName,variations}}}`;
 		const url = "http://local.ionic-project.de/api";
 		const opts = {
 			method: "POST",
@@ -30,6 +29,7 @@ class Product extends Component<{}, ProductState> {
 	}
 
 	render() {
+		console.log(this.state.product);
 		return (
 			<IonPage>
 				<IonHeader>
@@ -39,7 +39,7 @@ class Product extends Component<{}, ProductState> {
 					</IonToolbar>
 				</IonHeader>
 				<IonContent className="ion-padding">
-					<h2>Insert Name here</h2>
+					<h2>{this.state.product['title']}</h2>
 				</IonContent>
 			</IonPage>
 		);
