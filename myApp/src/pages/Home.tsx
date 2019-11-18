@@ -14,7 +14,7 @@ class Home extends Component<{}, HomeState> {
     };
 
     componentDidMount(): void {
-        const query = `query { entries { slug, ... on product_product_Entry { productName, productImages { url }}}}`;
+        const query = `query { entries { slug, ... on product_product_Entry{productName,productImages{url},productCategory{slug}}}}`;
         const url = "http://local.ionic-project.de/api";
         const opts = {
             method: "POST",
@@ -41,8 +41,8 @@ class Home extends Component<{}, HomeState> {
                         <IonRow>
                             {this.state.loaded ? this.state.products.map( (element:object, index:number) => {
                                 return(
-                                    <IonCol sizeSm="12" sizeMd="4" sizeLg="4">
-                                        <a href={element['slug']} key={index}>
+                                    <IonCol size="12" sizeSm="12" sizeMd="6" sizeLg="6">
+                                        <a href={element['productCategory'][0]['slug'] + '/' + element['slug']} key={index}>
                                             <IonCard>
                                                 <img src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
                                                 <IonHeader>
