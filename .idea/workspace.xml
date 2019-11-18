@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16c8f45-6a3a-4eca-98d3-0bc9d66f512d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myApp/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myApp/src/pages/Home.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            <state relative-caret-position="420">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -48,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myApp/src/pages/Product.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="315">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -90,9 +89,9 @@
         <option value="$PROJECT_DIR$/craft/config/general.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/myApp/tsconfig.json" />
-        <option value="$PROJECT_DIR$/myApp/src/pages/Home.tsx" />
         <option value="$PROJECT_DIR$/myApp/src/App.tsx" />
         <option value="$PROJECT_DIR$/myApp/src/pages/Product.tsx" />
+        <option value="$PROJECT_DIR$/myApp/src/pages/Home.tsx" />
       </list>
     </option>
   </component>
@@ -283,7 +282,7 @@
       <workItem from="1571570773797" duration="2817000" />
       <workItem from="1571830709601" duration="202000" />
       <workItem from="1572605586491" duration="8190000" />
-      <workItem from="1573203389198" duration="54686000" />
+      <workItem from="1573203389198" duration="56662000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1568539837336</created>
@@ -348,11 +347,25 @@
       <option name="project" value="LOCAL" />
       <updated>1573640087908</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="data for product page and basic skeleton">
+      <created>1574079259450</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574079259450</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed query">
+      <created>1574080219029</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1574080219029</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75696000" />
+    <option name="totallyTimeSpent" value="77672000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,7 +380,7 @@
     <frame x="-2560" y="-367" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1683876" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1683876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,10 +393,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23169811" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23169811" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="GraphQL" order="12" />
-      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.25667655" />
+      <window_info anchor="bottom" id="TypeScript" order="13" weight="0.25660378" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -404,7 +417,9 @@
     <MESSAGE value="ionic setup" />
     <MESSAGE value="working data implementation" />
     <MESSAGE value="tile sizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="tile sizing" />
+    <MESSAGE value="data for product page and basic skeleton" />
+    <MESSAGE value="fixed query" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed query" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/craft/composer.lock">
@@ -580,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myApp/src/pages/Home.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myApp/src/App.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -596,8 +604,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myApp/src/pages/Product.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myApp/src/pages/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCard, IonCol, IonCardTitle, IonIcon} from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCard, IonCol, IonCardTitle, IonIcon, IonLoading, IonImg} from '@ionic/react';
 import React, { Component } from 'react';
 
 type HomeState = {
@@ -41,10 +41,10 @@ class Home extends Component<{}, HomeState> {
                         <IonRow>
                             {this.state.loaded ? this.state.products.map( (element:object, index:number) => {
                                 return(
-                                    <IonCol size="12" sizeSm="12" sizeMd="6" sizeLg="6">
-                                        <a href={element['productCategory'][0]['slug'] + '/' + element['slug']} key={index}>
+                                    <IonCol size="12" sizeSm="12" sizeMd="6" sizeLg="6" key={index}>
+                                        <a href={element['productCategory'][0]['slug'] + '/' + element['slug']}>
                                             <IonCard>
-                                                <img src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
+                                                <IonImg src={"http://local.ionic-project.de" + element['productImages'][0]['url']} alt={'alt'} />
                                                 <IonHeader>
                                                     <IonCardTitle>{element['productName']}</IonCardTitle>
                                                 </IonHeader>
@@ -52,7 +52,10 @@ class Home extends Component<{}, HomeState> {
                                         </a>
                                     </IonCol>
                                 )
-                            }) : <p> Loading content</p>}
+                            }) : <IonLoading
+                                isOpen={!this.state.loaded}
+                                message={'Loading data...'}
+                            />}
                         </IonRow>
                     </IonGrid>
                 </IonContent>

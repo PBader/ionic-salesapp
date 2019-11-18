@@ -40,6 +40,9 @@ class Product extends Component<{}, ProductState> {
 				</IonHeader>
 				<IonContent className="ion-padding">
 					<h2>{this.state.product['title']}</h2>
+					<div>
+
+					</div>
 				</IonContent>
 			</IonPage>
 		);
