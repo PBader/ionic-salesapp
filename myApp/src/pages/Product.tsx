@@ -1,4 +1,4 @@
-import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon} from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonGrid, IonRow, IonCol, IonSlides, IonSlide, IonImg, IonLoading} from '@ionic/react';
 import React, { Component } from 'react';
 
 type ProductState = {
@@ -30,22 +30,42 @@ class Product extends Component<{}, ProductState> {
 
 	render() {
 		console.log(this.state.product);
-		return (
-			<IonPage>
-				<IonHeader>
-					<IonToolbar>
-						<IonIcon />
-						<IonTitle>Whitelabel Sales App</IonTitle>
-					</IonToolbar>
-				</IonHeader>
-				<IonContent className="ion-padding">
-					<h2>{this.state.product['title']}</h2>
-					<div>
-
-					</div>
-				</IonContent>
-			</IonPage>
-		);
+		const slideOpts = {
+			initialSlide: 1,
+			speed: 400
+		};
+		return <IonPage>
+			<IonHeader>
+				<IonToolbar>
+					<IonIcon />
+					<IonTitle>Whitelabel Sales App</IonTitle>
+				</IonToolbar>
+			</IonHeader>
+			<IonContent className="ion-padding">
+				<h2>{this.state.product['title']}</h2>
+				<IonGrid>
+					<IonRow>
+						<IonCol size={"12"}>
+							{this.state.loaded ?
+								<IonSlides pager={true} options={slideOpts}>
+									{this.state.product['productImages'].map( (image:object, index:number) => {
+										return (
+											<IonSlide key={index}>
+												<IonImg src={"http://local.ionic-project.de" + image['url']} alt={'alt'} />
+											</IonSlide>
+										)
+									})}
+								</IonSlides>
+							: <IonLoading
+								isOpen={!this.state.loaded}
+								message={'Loading data...'}
+								/>}
+						</IonCol>
+						<IonCol dangerouslySetInnerHTML={this.state.product['productDescription']} />
+					</IonRow>
+				</IonGrid>
+			</IonContent>
+		</IonPage>;
 	}
 }
 
