@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16c8f45-6a3a-4eca-98d3-0bc9d66f512d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_set_name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +16,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>console</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -173,7 +166,9 @@
       <workItem from="1574085237185" duration="75000" />
       <workItem from="1574085347322" duration="2832000" />
       <workItem from="1574090098253" duration="943000" />
-      <workItem from="1574091060404" duration="11340000" />
+      <workItem from="1574091060404" duration="22434000" />
+      <workItem from="1574245148459" duration="246000" />
+      <workItem from="1574245420767" duration="5866000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1568539837336</created>
@@ -259,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574081375353</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="slider on product page">
+      <created>1574170859774</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574170859774</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -301,7 +303,8 @@
     <MESSAGE value="data for product page and basic skeleton" />
     <MESSAGE value="fixed query" />
     <MESSAGE value="better loading for homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="better loading for homepage" />
+    <MESSAGE value="slider on product page" />
+    <option name="LAST_COMMIT_MESSAGE" value="slider on product page" />
   </component>
   <component name="masterDetails">
     <states>
