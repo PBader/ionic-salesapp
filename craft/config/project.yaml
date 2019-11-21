@@ -1,0 +1,345 @@
+categoryGroups:
+  39faa2ce-0db6-44ec-80e4-cb2ddd664bc1:
+    name: 'Product Type'
+    handle: productType
+    structure:
+      uid: dc5b8c30-fcbd-4d37-b305-81fe428cb975
+      maxLevels: 1
+    siteSettings:
+      fb3574b0-6e39-4293-a902-6ae49f28652c:
+        hasUrls: true
+        uriFormat: 'product-type/{slug}'
+        template: ''
+dateModified: 1574327980
+email:
+  fromEmail: pb@vierbeuter.de
+  fromName: 'Local Ionic Project'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  309f4a4f-b4a7-4002-a2b1-4cbe88edf3d0:
+    name: 'Global Shop Settings'
+  c84484b4-eb47-45cb-b486-6005aed45d9a:
+    name: Product
+  ce3648bb-0c7e-47f5-8595-55bedcf64bef:
+    name: Common
+fields:
+  0593e513-f1ad-41be-8bb8-df17820252ad:
+    name: Brandlogo
+    handle: brandlogo
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 309f4a4f-b4a7-4002-a2b1-4cbe88edf3d0
+  2db73739-c525-4564-955e-4d3a17cac50e:
+    name: Ingredients
+    handle: ingredients
+    instructions: '(Optional) Ingredients of product'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  37addba1-e5d3-4915-8aa6-2533d678e042:
+    name: Currency
+    handle: currency
+    instructions: 'Set currency for page'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 309f4a4f-b4a7-4002-a2b1-4cbe88edf3d0
+  4658574c-e0ee-4068-9b3a-2294e3e8ca47:
+    name: Variations
+    handle: variations
+    instructions: 'Comma separated variations like color or size.'
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  642fc9ff-6ac7-47ae-97f5-1830fe049f5b:
+    name: 'Price with Tax'
+    handle: priceWithTax
+    instructions: 'Price including Tax'
+    searchable: false
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Number
+    settings:
+      defaultValue: null
+      min: '0'
+      max: null
+      decimals: '2'
+      size: null
+      prefix: ''
+      suffix: ''
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  878fd938-27a2-4db1-848e-9d9be8913b6c:
+    name: 'Product Category'
+    handle: productCategory
+    instructions: ''
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Categories
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      branchLimit: ''
+      sources: '*'
+      source: 'group:39faa2ce-0db6-44ec-80e4-cb2ddd664bc1'
+      targetSiteId: null
+      viewMode: null
+      limit: null
+      selectionLabel: ''
+      localizeRelations: false
+      validateRelatedElements: ''
+    contentColumnType: string
+    fieldGroup: ce3648bb-0c7e-47f5-8595-55bedcf64bef
+  a214e1d7-312b-423a-a49c-f685dd72bfdd:
+    name: 'Product Name'
+    handle: productName
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  cb92b9c3-90a1-48d7-bc63-333692396db9:
+    name: 'Product Description'
+    handle: productDescription
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\redactor\Field
+    settings:
+      redactorConfig: ''
+      purifierConfig: ''
+      cleanupHtml: true
+      removeInlineStyles: '1'
+      removeEmptyTags: '1'
+      removeNbsp: '1'
+      purifyHtml: '1'
+      columnType: text
+      availableVolumes: '*'
+      availableTransforms: '*'
+    contentColumnType: text
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  dd2cff24-f783-413b-928d-2202c7b35765:
+    name: 'Product Images'
+    handle: productImages
+    instructions: 'Upload and/or select multiple Images to be displayed on the product Page'
+    searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Assets
+    settings:
+      useSingleFolder: ''
+      defaultUploadLocationSource: 'volume:52f62626-9dba-4184-a787-5e76b6d9bfd0'
+      defaultUploadLocationSubpath: web/productimages
+      singleUploadLocationSource: 'volume:52f62626-9dba-4184-a787-5e76b6d9bfd0'
+      singleUploadLocationSubpath: ''
+      restrictFiles: '1'
+      allowedKinds:
+        - image
+      sources: '*'
+      source: null
+      targetSiteId: null
+      viewMode: large
+      limit: '20'
+      selectionLabel: ''
+      localizeRelations: false
+      validateRelatedElements: ''
+    contentColumnType: string
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+  fb796594-9362-4931-9ace-2655891d7ad7:
+    name: Brandname
+    handle: brandname
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
+    settings:
+      placeholder: ''
+      code: ''
+      multiline: ''
+      initialRows: '4'
+      charLimit: ''
+      columnType: text
+    contentColumnType: text
+    fieldGroup: 309f4a4f-b4a7-4002-a2b1-4cbe88edf3d0
+  fc47482e-7f33-4518-8bb2-0f494e6c1fe0:
+    name: 'Price without Tax'
+    handle: priceWithoutTax
+    instructions: ''
+    searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Number
+    settings:
+      defaultValue: null
+      min: '0'
+      max: null
+      decimals: '2'
+      size: null
+      prefix: ''
+      suffix: ''
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: c84484b4-eb47-45cb-b486-6005aed45d9a
+globalSets:
+  e0900c03-5b16-4da3-b124-3cc61d385848:
+    name: 'Shop Settings'
+    handle: shopSettings
+    fieldLayouts:
+      5ee5747d-1e62-41ab-8dab-fcf0c8d92d66:
+        tabs:
+          -
+            name: 'Global Shop Settings'
+            sortOrder: 1
+            fields:
+              0593e513-f1ad-41be-8bb8-df17820252ad:
+                required: false
+                sortOrder: 2
+              37addba1-e5d3-4915-8aa6-2533d678e042:
+                required: false
+                sortOrder: 3
+              fb796594-9362-4931-9ace-2655891d7ad7:
+                required: false
+                sortOrder: 1
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+sections:
+  992424df-3e91-444c-9f0d-e0af8a9c3c1e:
+    name: Product
+    handle: product
+    type: channel
+    enableVersioning: true
+    propagationMethod: all
+    siteSettings:
+      fb3574b0-6e39-4293-a902-6ae49f28652c:
+        enabledByDefault: false
+        hasUrls: false
+        uriFormat: ''
+        template: null
+    entryTypes:
+      fc8458b8-c7d5-4eb3-b9f5-e13f5295b601:
+        name: Product
+        handle: product
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
+        fieldLayouts:
+          22fa7249-b7c1-4ceb-9460-15b29b8d308d:
+            tabs:
+              -
+                name: Product
+                sortOrder: 1
+                fields:
+                  2db73739-c525-4564-955e-4d3a17cac50e:
+                    required: false
+                    sortOrder: 8
+                  4658574c-e0ee-4068-9b3a-2294e3e8ca47:
+                    required: false
+                    sortOrder: 6
+                  642fc9ff-6ac7-47ae-97f5-1830fe049f5b:
+                    required: false
+                    sortOrder: 4
+                  878fd938-27a2-4db1-848e-9d9be8913b6c:
+                    required: false
+                    sortOrder: 3
+                  a214e1d7-312b-423a-a49c-f685dd72bfdd:
+                    required: false
+                    sortOrder: 1
+                  cb92b9c3-90a1-48d7-bc63-333692396db9:
+                    required: false
+                    sortOrder: 7
+                  dd2cff24-f783-413b-928d-2202c7b35765:
+                    required: false
+                    sortOrder: 2
+                  fc47482e-7f33-4518-8bb2-0f494e6c1fe0:
+                    required: false
+                    sortOrder: 5
+siteGroups:
+  e9049216-db6f-4935-9ddc-9663d4a077d3:
+    name: 'Local Ionic Project'
+sites:
+  fb3574b0-6e39-4293-a902-6ae49f28652c:
+    baseUrl: $DEFAULT_SITE_URL
+    handle: default
+    hasUrls: true
+    language: en-US
+    name: 'Local Ionic Project'
+    primary: true
+    siteGroup: e9049216-db6f-4935-9ddc-9663d4a077d3
+    sortOrder: 1
+system:
+  edition: pro
+  name: 'Local Ionic Project'
+  live: true
+  schemaVersion: 3.3.3
+  timeZone: America/Los_Angeles
+users:
+  requireEmailVerification: true
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoVolumeUid: null
+  photoSubpath: ''
+volumes:
+  52f62626-9dba-4184-a787-5e76b6d9bfd0:
+    name: 'Product Images'
+    handle: productImages
+    type: craft\volumes\Local
+    hasUrls: true
+    url: /Volumes/ProductImages
+    settings:
+      path: '@webroot/Volumes/ProductImages'
+    sortOrder: 1

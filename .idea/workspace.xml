@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16c8f45-6a3a-4eca-98d3-0bc9d66f512d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/craft/config/project.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/craft/config/redactor/Standard.json" beforeDir="false" afterPath="$PROJECT_DIR$/craft/config/redactor/Standard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/default/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/craft/config/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/craft/config/general.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/myApp/src/pages/Product.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,7 +171,9 @@
       <workItem from="1574090098253" duration="943000" />
       <workItem from="1574091060404" duration="22434000" />
       <workItem from="1574245148459" duration="246000" />
-      <workItem from="1574245420767" duration="13772000" />
+      <workItem from="1574245420767" duration="16827000" />
+      <workItem from="1574330525503" duration="99000" />
+      <workItem from="1574330644107" duration="97000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1568539837336</created>
@@ -269,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574256006163</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="finalized product page structure">
+      <created>1574326652884</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1574326652884</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -313,7 +324,8 @@
     <MESSAGE value="better loading for homepage" />
     <MESSAGE value="slider on product page" />
     <MESSAGE value="data structure and mobile styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="data structure and mobile styling" />
+    <MESSAGE value="finalized product page structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized product page structure" />
   </component>
   <component name="masterDetails">
     <states>

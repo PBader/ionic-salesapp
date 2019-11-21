@@ -26,7 +26,7 @@ class Product extends Component<{}, ProductState> {
 		};
 		fetch(url, opts)
 			.then(res => res.json())
-			.then(res => this.setState({product: res.data.entries[0], currency: res.data["globalSets"][0]['currency']}))
+			.then(res => this.setState({product: res.data.entries[0], currency: res.data['globalSets'][0]['currency']}))
 			.then(() => this.setState({loaded: true}))
 	}
 
