@@ -1,4 +1,4 @@
-import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonGrid, IonRow, IonCol, IonSlides, IonSlide, IonImg, IonLoading, IonSelect, IonSelectOption, IonLabel, IonItem} from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonIcon, IonGrid, IonRow, IonCol, IonSlides, IonSlide, IonImg, IonLoading, IonSelect, IonSelectOption, IonLabel, IonItem, IonInput, IonButton} from '@ionic/react';
 import React, { Component } from 'react';
 
 type ProductState = {
@@ -76,9 +76,13 @@ class Product extends Component<{}, ProductState> {
 										})}
 									</IonSelect>
 								</IonItem>
+								<IonItem>
+									<IonInput type="number" placeholder="Amount" />
+								</IonItem>
+								<IonButton className="ion-padding">Add to cart</IonButton>
 							</IonCol>
 						</IonRow>
-						<IonRow>
+						<IonRow className="ion-padding">
 							<IonCol size={"12"} sizeMd={"8"} pushMd={"2"} >
 								{this.state.product['productDescription']}
 							</IonCol>
