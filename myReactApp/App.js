@@ -25,6 +25,28 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false,
+      products: [],
+    };
+  }
+
+  componentDidMount(): void {
+    const query = `query { entries { slug, ... on product_product_Entry{productName,productImages{url},productCategory{slug}}}}`;
+    const url = "http://10.0.2.2/api/";
+    const opts = {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({query})
+    };
+    fetch(url, opts)
+      .then(res => res.json())
+      .then(res => this.setState({products: res.data.entries}))
+      .then(() => this.setState({loaded: true}))
+  }
+
   render() {
     return (
       <>
